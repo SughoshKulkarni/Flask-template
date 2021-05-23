@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<title>ToolSuite | Downloads</title>
+{% endblock %}
+
+
+{% block body %}
+<br><br><br><br>
+<center>
+<div style="width:35%;background-color: rgba(142, 176, 218, 0.5);border-radius: 12px;min-width: 50px;color:white;font-family:Helvetica;font-size:90%;padding-top:0px;padding-right:5px;padding-bottom:30px;padding-left:30px;" width="1024" height="500" >
+    <div class="container-login100" align='center'>
+        <div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30" align='center'>
+            <form class="login100-form validate-form">
+                <span class="login100-form-title p-b-37">
+                    <br><br>
+                    Downloads
+                </span>
+                <table style="width:100%" align='center'>
+                    <!--<tr align="center">-->
+                    {% for file in files %}
+                    <tr>
+                    <td>
+                    <a href="{{  url_for('static', filename='downloads/')  }}{{  file  }}">{{ file }}</a>
+                    </td>
+                    </tr>
+                    {% endfor %}
+                    <!--</tr>-->
+                </table>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+</center>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<!-- This is the text on the tab -->
+<title>ToolSuite | Another page</title>
+{% endblock %}
+
+
+{% block body %}
+<div class="content" align='center'>
+    <h1 style="text-align: center">This is another page</h1>
+    <div>Below is the text from the function:<br>
+        <!-- The <u> tag underlines the text -->
+        <!-- The {{ text }} is the placeholder for the text from the function -->
+        <h2><u>{{text}}</u></h2>
+    </div>
+</div>
+
+
+
+{% endblock %}

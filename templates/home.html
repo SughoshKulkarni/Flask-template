@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<!-- This is the text that goes on the tab -->
+<title>ToolSuite | Home</title>
+{% endblock %}
+
+
+{% block body %}
+<div class="content" align="center">
+    <h1 style="text-align: center">This is the home page</h1>
+    <!-- Adding a button to go to another page -->
+    <form action='another_page'>
+        <button class="button button1" type="submit">Click here to go to another page</button>
+    </form>
+    <!-- ---------------------------------------------------------------------------------- -->
+    <br><br><br><br><br><br><br>
+
+    <h1 style="text-align: center">Upload an excel file and click Run function</h1>
+    <!-- The action='/samle_function' calls the function in app.py file. -->
+    <form align="center" action="/sample_function" method="post" enctype="multipart/form-data">
+        <!-- data_file is the same name that will be used to request file in app.py -->
+        <input type="file" name="data_file" />
+            <br>
+            <br>
+        <!-- Adding a button and on clicking this button, it calls the sample_function in app.py file -->
+        <button class="button button2" type="submit" method="post" enctype="multipart/form-data">
+            Run function
+        </button>
+    </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,56 @@
+body, html {
+    margin: 0;
+    font-family: "Helvetica";
+}
+
+/* Below is the formatting for the button */
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  /* 'button1' is the name of the button */
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+  
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+
+
+  .login100-form {
+    width: 100%;
+  }
+  
+  .login100-form-title {
+    display: block;
+    font-family: Helvetica;
+    font-size: 30px;
+    color: #4b2354;
+    line-height: 1.2;
+    text-align: center;
+  }
